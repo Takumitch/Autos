@@ -46,9 +46,32 @@ body {
     color: #D50000;
 }
 
+/* Estilo para la galería */
 .Galeria img {
-    width: auto;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6); /* Sombra roja */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Galeria img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.8);
+}
+
+/* Estilo para las imágenes en la sección derecha */
+.main .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .right img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.8);
 }
 
 .Articulo article {
@@ -78,3 +101,4 @@ body {
     margin-top: 20px;
     font-size: 1rem;
 }
+
